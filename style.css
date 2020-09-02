@@ -1,0 +1,232 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+/********************
+Basic Style
+********************/
+body {
+	font-family:Segoe UI, 'sans-serif';
+	color:#464b4f;
+	text-align:center;
+}
+/********************
+Reusable Components 
+********************/
+.home-area::after, .about-area::after, .gallery-area::after, .gallery::after, .porfolio-area::after {
+	content:"";
+	display:block;
+	clear:both;
+}
+.container {
+	max-width:940px;
+	margin:auto;
+}
+h1, h2 {
+	font-size:80px;
+	font-weight:700;
+	text-transform:uppercase;
+}
+p {
+	color:#888a8b;
+	font-size:30px;
+}
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background: #7b77c9;
+  padding: 18px 30px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  transition: 0.4s;
+
+}
+.btn:hover {
+  background: rgba(156, 136, 255,1.0);
+}
+/********************
+Star Home Section 
+********************/
+.home-area {
+	background: linear-gradient(rgba(53, 59, 72, 0.9), rgba(53, 59, 72, 0.9)), url(images/home-bg.jpeg) no-repeat center / cover;
+	padding:80px 0 50px;	
+	color:#fff;
+}
+.logo-area, .home-text p {
+  margin-bottom: 150px !important;
+}
+.home-text h1 {
+  margin-bottom: 50px;
+}
+.home-text p {
+  font-size: 18px;
+  width:45%;
+  margin: auto;
+  line-height:28px;
+  color:#fff;
+}
+
+/******************
+Start About Section
+******************/
+.about-area {
+    background: #fff url(images/about-bg.png) left bottom/ cover;
+    padding: 110px 0;
+}
+.biography {
+  margin-bottom: 100px;
+  width: 92%;
+  margin:auto;
+}
+.biography p {
+  line-height: 42px;
+  margin-bottom: 45px;
+}
+.service-details h2 {
+  text-transform: uppercase;
+  margin-bottom: 80px;
+}
+.service-details .service-box {
+  width: 32%;
+  float: left;
+  margin-right: 2%;
+}
+.service-details .service-box:last-child {
+  margin-right: 0;
+}
+.service-details .service-box h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+.service-details .service-box p {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: left;
+}
+/**************
+Start Portfolio Area
+**************/
+.porfolio-area {
+  background: linear-gradient(rgba(53, 59, 72, 0.9), rgba(53, 59, 72, 0.9)), url(images/gallery6.png) no-repeat center / cover;
+  background-attachment: fixed;
+  padding: 110px 70px;
+  color: #fff;
+}
+.porfolio-area h2 {
+  margin-bottom: 45px;
+}
+.porfolio-filter {
+  margin-bottom: 40px;
+}
+.portfolio-filter {
+  margin-bottom: 45px;
+}
+.portfolio-filter button {
+  background: none;
+  border: 0;
+  font-size: 14px;
+  color: #fff;
+  margin: 0 26px;
+  padding: 7px 0;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+}
+.portfolio-filter button:hover {
+  border-bottom-color: #7b77c9;
+}
+.portfolio-filter button.mixitup-control-active {
+  border-bottom-color: #7b77c9;
+}
+.portfolio-item-wrap .portfolio-item {
+  width: 32%;
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 40px;  
+}
+.portfolio-item img {
+  width: 100%;
+  height: 300px;
+}
+.portfolio-item h3 {
+  font-size: 21px;
+  margin: 20px 0 10px;
+}
+.portfolio-item p {
+  font-size: 15px;
+}
+.portfolio-item:nth-child(3), .portfolio-item:last-child {
+  margin-right: 0;
+}
+
+/*************
+Start Gallery Area
+*************/
+.gallery-area {
+  background: #fff url(images/gallery-bg.png) center / cover;
+  padding:110px 0 70px;
+}
+.gallery-header h2 {
+  margin-bottom: 40px;
+}
+.gallery-header p {
+  width: 83%;
+  margin: auto;
+  margin-bottom: 45px;
+}
+.gallery .gallery-item {
+  width: 32%;
+  height: 300px;
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 16px;  
+}
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+}
+.gallery-item:nth-child(3), .gallery-item:last-child {
+  margin-right: 0;
+}
+.gallery {
+  margin-bottom: 80px;
+}
+
+/*****************
+Start CTA Area
+*****************/
+.cta-area {
+  background: linear-gradient(rgba(53, 59, 72, 0.9), rgba(53, 59, 72, 0.9)), url(images/cta-bg.jpeg) no-repeat center / cover;
+  padding: 230px 0;
+}
+.cta-area p {
+  color: #fff;
+  font-size: 18px;
+  width: 48%;
+  margin: 40px auto;
+}
+.cta-area form {
+  max-width: 600px;
+  margin: auto;
+}
+.cta-area input[type=email] {
+  width: 64%;
+  margin-right: 2%;
+  padding: 18px 18px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+}
+.cta-area input[type="submit"] {
+  width: 33%;
+  border: none;
+  font-size: 18px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.cta-area input[type="email"]::placeholder {
+  opacity: 0.2;
+}
